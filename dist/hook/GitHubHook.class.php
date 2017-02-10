@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 
 /**
  * GitHub Post-Receive Deployment Hook.
@@ -143,7 +143,7 @@ class GitHubHook
    * @param string $message Message to log.
    * @since 1.0
    */
-  public function error($code,$message) {
+  public function error($code, $message) {
     if ($this->_debug) {
       trigger_error($message,E_USER_ERROR);
      }
@@ -180,7 +180,7 @@ class GitHubHook
                   exec($cmd,$output,$exit);
                   $msg="\t" . join(PHP_EOL . "\t", $output);
                   if (0!=$exit)
-                      $this->error("error($exit): " . $branch['path'] . '$ ' . $cmd . PHP_EOL . $msg);
+                      $this->error($exit, "error($exit): " . $branch['path'] . '$ ' . $cmd . PHP_EOL . $msg);
                   else
                       $this->log(msg); 
               }
