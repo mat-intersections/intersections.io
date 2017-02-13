@@ -76,8 +76,8 @@ class GitHubHook
       $this->log($reason);
     }
 
-    header('HTTP/1.1 404 Not Found');
-    echo '404 Not Found.';
+    header('HTTP/1.1 403 Forbidden');
+    echo '403 Forbidden.';
     exit;
   }
 
