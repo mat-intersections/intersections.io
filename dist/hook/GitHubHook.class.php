@@ -1,5 +1,6 @@
 <?php
-error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
+ini_set('display_errors', 1);
 
 /**
  * GitHub Post-Receive Deployment Hook.
@@ -12,6 +13,8 @@ error_reporting(0);
 
 class GitHubHook
 {
+  private $log_path = '/var/www/intersections.io/githook.log';
+
   /**
    * @var string Remote IP of the person.
    * @since 1.0
@@ -86,29 +89,29 @@ class GitHubHook
    * @return bool
    */
   private function ip_in_cidrs($ip, $cidrs) {
-	$ipu = explode('.', $ip);
+  $ipu = explode('.', $ip);
 
-	foreach ($ipu as &$v) {
-		$v = str_pad(decbin($v), 8, '0', STR_PAD_LEFT);
-	}
+  foreach ($ipu as &$v) {
+    $v = str_pad(decbin($v), 8, '0', STR_PAD_LEFT);
+  }
 
-	$ipu = join('', $ipu);
-	$result = FALSE;
+  $ipu = join('', $ipu);
+  $result = FALSE;
 
-	foreach ($cidrs as $cidr) {
-		$parts = explode('/', $cidr);
-		$ipc = explode('.', $parts[0]);
+  foreach ($cidrs as $cidr) {
+    $parts = explode('/', $cidr);
+    $ipc = explode('.', $parts[0]);
 
-		foreach ($ipc as &$v) $v = str_pad(decbin($v), 8, '0', STR_PAD_LEFT); {
-			$ipc = substr(join('', $ipc), 0, $parts[1]);
-			$ipux = substr($ipu, 0, $parts[1]);
-			$result = ($ipc === $ipux);
-		}
+    foreach ($ipc as &$v) $v = str_pad(decbin($v), 8, '0', STR_PAD_LEFT); {
+      $ipc = substr(join('', $ipc), 0, $parts[1]);
+      $ipux = substr($ipu, 0, $parts[1]);
+      $result = ($ipc === $ipux);
+    }
 
-		if ($result) break;
-	}
+    if ($result) break;
+  }
 
-	return $result;
+  return $result;
   }
 
   /**
@@ -143,9 +146,12 @@ class GitHubHook
    * @param string $message Message to log.
    * @since 1.0
    */
-  public function error($code,$message) {
+  public function error($code, $message) {
     if ($this->_debug) {
-      trigger_error($message,E_USER_ERROR);
+      http_response_code(500);
+      file_put_contents($this->log_path, '[' . date('r') .'][ERROR] (code ' . $code . '): ' . $message . "\n", FILE_APPEND);
+      echo $message;
+      // trigger_error($message,E_USER_ERROR);
      }
   }
 
@@ -156,7 +162,7 @@ class GitHubHook
    */
   public function log($message) {
     if ($this->_debug) {
-       error_log($message);
+       file_put_contents($this->log_path, '[' . date('r') .'][LOG] ' . $message . "\n", FILE_APPEND);
      }
   }
 
@@ -173,16 +179,16 @@ class GitHubHook
                   $output=array(); 
                   $exit=0;
                   if (is_null($branch['cmd'])) {
-                      $cmd='git --git-dir='. escapeshellarg($branch['path'] . '/.git') .' --work-tree='. escapeshellarg($branch['path']) .' pull origin '. escapeshellarg($branch['name']);
+                      $cmd='git --git-dir='. escapeshellarg($branch['path'] . '/.git') .' --work-tree='. escapeshellarg($branch['path']) .' pull origin '. escapeshellarg($branch['name']) . ' 2>&1';
                   } else {
                       $cmd=escapeshellcmd($branch['cmd']);
                   }
                   exec($cmd,$output,$exit);
                   $msg="\t" . join(PHP_EOL . "\t", $output);
                   if (0!=$exit)
-                      $this->error("error($exit): " . $branch['path'] . '$ ' . $cmd . PHP_EOL . $msg);
+                      $this->error($exit, "error($exit): " . $branch['path'] . '$ ' . $cmd . PHP_EOL . $msg);
                   else
-                      $this->log(msg); 
+                      $this->log(msg);
               }
           }
       } else {
