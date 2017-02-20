@@ -1,0 +1,21 @@
+// Mixin to avoid repeating stuff
+=font-face($family, $path, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('../fonts/#{$path}.eot')
+    src: url('../fonts/#{$path}.eot?#iefix') format('embedded-opentype'), url('../fonts/#{$path}.woff') format('woff'), url('../fonts/#{$path}.ttf') format('truetype'), url('../fonts/#{$path}.svg#font') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+// Andd we add 'em
++font-face("CooperHewitt", "CooperHewitt-Book", 300, normal)
++font-face("CooperHewitt", "CooperHewitt-BookItalic", 300, italic)
+
++font-face("CooperHewitt", "CooperHewitt-Medium", normal, normal)
++font-face("CooperHewitt", "CooperHewitt-MediumItalic", normal, italic)
+
++font-face("CooperHewitt", "CooperHewitt-Bold", bold, normal)
++font-face("CooperHewitt", "CooperHewitt-BoldItalic", bold, italic)
+
++font-face("CooperHewitt", "CooperHewitt-Heavy", 900, normal)
++font-face("CooperHewitt", "CooperHewitt-HeavyItalic", 900, italic) // ?
