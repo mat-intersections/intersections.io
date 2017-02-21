@@ -4,6 +4,8 @@
 
 It's a **static website** because we don't need no Wordpress for this. Content is in Markdown where possible, EJS (an HTML-like) for markup, CoffeeScript for script and Sass for styles. All of these are separately and automagically compiled/watched with [Harp](http://harpjs.com), so the final files are not visible in this repo.
 
+The CSS is using [Skeleton](http://getskeleton.com), a simple grid/boilerplate, and Sass files are organised with the [7-1 architecture pattern](https://sass-guidelin.es/#architecture).
+
 ## Set up a development environment
 
 Install Node.js and NPM. Install Harp: `npm install -g harp`. Clone this repository, and from inside it, run `harp server` to watch and serve your files as you edit them. Boom.

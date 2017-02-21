@@ -3,22 +3,21 @@
 // -----------------------------------------------------------------------------
 
 header
-	margin: 4rem 0 0 0
+	border-top: 1rem solid $gold
 	a img
 		width: 100%
 
 .topic
-	background: $gold-20
+	// background: $gold-20
 
 .topic h2
-	color: $gold
+	color: $gold-60
 	font-family: $text-font-stack
 	font-size: 3rem
 	+real-small-caps
 
-.teal
-	background: $teal
-	color: white
+	+mobile
+		font-size: 2.5rem
 
-	h2
-		color: white
+	span
+		color: $gold
