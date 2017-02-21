@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// Mixin to avoid repeating stuff
+=font-face($family, $path, $weight: normal, $style: normal, $svg-name: "font")
+  @font-face
+    font-family: $family
+    src: url('../fonts/#{$path}.eot')
+    src: url('../fonts/#{$path}.eot?#iefix') format('embedded-opentype'), url('../fonts/#{$path}.woff') format('woff'), url('../fonts/#{$path}.ttf') format('truetype'), url('../fonts/#{$path}.svg##{ $svg-name }') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+// Cooper Hewitt font
++font-face("CooperHewitt", "CooperHewitt-Book", 300, normal)
++font-face("CooperHewitt", "CooperHewitt-BookItalic", 300, italic)
+
++font-face("CooperHewitt", "CooperHewitt-Medium", normal, normal)
++font-face("CooperHewitt", "CooperHewitt-MediumItalic", normal, italic)
+
++font-face("CooperHewitt", "CooperHewitt-Bold", bold, normal)
++font-face("CooperHewitt", "CooperHewitt-BoldItalic", bold, italic)
+
++font-face("CooperHewitt", "CooperHewitt-Heavy", 900, normal)
++font-face("CooperHewitt", "CooperHewitt-HeavyItalic", 900, italic) // ?
+
+// Infini font
++font-face("CnapInfini", "infini-romain", normal, normal, "Infini-Regular")
++font-face("CnapInfini", "infini-italic", normal, italic, "Infini-Italic")
++font-face("CnapInfini", "infini-gras", bold, normal, "Infini-Bold")

@@ -1,0 +1,13 @@
+doctype
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="styles/main.css")
+    title #{ title } | #{ dates } in London
+  body
+    != partial("_partials/header")
+
+    main
+        != yield
+
+   != partial("_partials/footer")
