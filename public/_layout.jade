@@ -1,0 +1,12 @@
+doctype
+html
+  head
+    link(rel="stylesheet" href="styles/main.css")
+    title #{ title } | #{ dates } in London
+  body
+    != partial("_partials/header")
+
+    main
+        != yield
+
+   != partial("_partials/footer")
