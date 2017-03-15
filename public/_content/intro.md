@@ -1,0 +1,1 @@
+Intersections is the annual symposium organised by the Media and Arts Technology doctoral programme at Queen Mary University of London, combining an exhibition, talks, workshops and performances into a week-long discussion of innovative and interdisciplinary research in arts and science.

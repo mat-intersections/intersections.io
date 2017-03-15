@@ -3,7 +3,7 @@
         .five.columns
             h2 Inter/sections
 
-            p Intersections is the annual symposium organised by the Media and Arts Technology doctoral programme at Queen Mary University of London, combining an exhibition, talks, workshops and performances into a week-long discussion of innovative and interdisciplinary research in arts and science.
+            != partial("_content/intro")
 
             iframe(src="https://player.vimeo.com/video/188005932?color=3AA08F", width="100%", height="204", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
 
@@ -12,18 +12,14 @@
         .seven.columns
             h2 Abstract
 
-            p Intersections is the annual symposium organised by the Media and Arts Technology doctoral programme at Queen Mary University of London, combining exhibition, talks, workshops, performances and events into a week-long discussion of innovative and interdisciplinary research in arts and science.
-
-            p Hosted at the Mile End Art Pavilion in the heart of East London, Intersections 2017 will focus on ethics and politics in media and arts technology. Invited experts will share their works and thoughts about [topic 1], [topic 2] and [topic 3] amongst others, fostering discussion between academia, industry, government and the public.
-
-            p Visitors will be able to explore an exhibition showcasing a range of installations and performances developed as part of the research by the programme’s postgraduate students, and participate in workshops including [learn about / participate in event 1], [learn about / participate in event 2], [learn about / participate in event 3].
+            != partial("_content/abstract")
 
 .section
     .container
         .row
             .seven.columns
                 h2 Call for speakers
-                p We are looking for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                != partial("_content/call-for-speakers")
 
             .five.columns
                 img.full-width(src="http://placehold.it/600x400", alt="Placeholder")
