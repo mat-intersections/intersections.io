@@ -26,5 +26,15 @@
                 //- ??
 
 .section.black
+.section.call-for-artists
+    .container
+        .row
+            .five.columns
+                img.full-width(src="/images/art.png", alt="Placeholder")
+
+            .seven.columns
+                h2 Call for artists
+                != partial("_content/artists-commission")
+
     .container
         != partial("_partials/mailing-list-registration")
