@@ -1,4 +1,4 @@
-.section.teal
+.section.introduction
     .container: .row
         .five.columns
             h2 Inter/sections
@@ -14,7 +14,7 @@
 
             != partial("_content/abstract")
 
-.section
+.section.call-for-speakers
     .container
         .row
             .seven.columns
@@ -25,6 +25,16 @@
                 img.full-width(src="http://placehold.it/600x400", alt="Placeholder")
                 //- ??
 
-.section.black
+.section.call-for-artists
+    .container
+        .row
+            .five.columns
+                img.full-width(src="/images/art.png", alt="Placeholder")
+
+            .seven.columns
+                h2 Call for artists
+                != partial("_content/artists-commission")
+
+.section.mailing-list-registration
     .container
         != partial("_partials/mailing-list-registration")
