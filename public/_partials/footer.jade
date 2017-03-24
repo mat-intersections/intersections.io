@@ -7,8 +7,8 @@ footer.section
         .row
             //- sponsors is defined in harp.json
             each details, sponsor in sponsors
-                .two.columns
-                    a.logo(href=details[1])
+                .logo.two.columns
+                    a(href=details[1])
                         img(src='/images/sponsors/#{ sponsor }.png', alt=details[0], title=details[0])
          .row
             .eight-columns
