@@ -1,3 +1,3 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+For the first year, we announce the MAT Inter/sections Commission. Through a call for proposals, one or more artists will be asked to produce a new piece of media art for exhibition at Inter/Sections 2017. This commission includes up to £1000 to produce a work that reflects on the theme of Politics and Ethics in media and arts technology.
 
-For more information [read the PDF](/intersections-artists-call.pdf).
+For further information please [read the call for artists](/docs/artists-commission.pdf).
