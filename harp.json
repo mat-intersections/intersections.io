@@ -1,0 +1,14 @@
+{
+    "globals": {
+        "title": "INTER/SECTIONS",
+        "dates": "3—8 September 2017",
+        "sponsors": {
+            "MAT":  ["Media and Arts Technology", "http://www.mat.qmul.ac.uk"],
+            "QMUL": ["Queen Mary University of London", "http://qmul.ac.uk"],
+            "RCUK": ["Research Councils UK Digital Economy", "http://www.rcuk.ac.uk/research/xrcprogrammes/Digital/"],
+            "AHRC": ["Arts &amp; Humanities Research Council", "http://www.ahrc.ac.uk/"],
+            "C4DM": ["Centre for Digital Music", "http://c4dm.eecs.qmul.ac.uk/"],
+            "EPSRC":["EPSRC", "http://www.epsrc.ac.uk/"]
+        }
+    }
+}

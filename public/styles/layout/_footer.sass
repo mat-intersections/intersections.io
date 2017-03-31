@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer
+	background-color: $gold-60
+	color: mix($gold, $rich-black, 50%)
+
+	a:link, a:visited
+		color: mix($gold, $rich-black, 30%)
+
+
+.logo
+	min-height: 100px
+	display: flex
+	align-items: center
+	width: 40%  // 2 columns
+	margin-left: 4%
+
+	@media (min-width: 550px)
+		width: 13.3333333333%  // 2 columns
+
+	img
+		width: 100%
+		box-sizing: border-box

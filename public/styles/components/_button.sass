@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// !! This extends the Skeleton button, see the Skeleton source for all parameters
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+    width: 100%
+    font-family: $text-font-stack
+    font-size: 1.6rem
+    // text-transform: none
+    text-decoration: none
+    +real-small-caps
+
+    +mobile
+        font-size: 1.4rem
+        padding: 0 10px
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus
+    outline: 0
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary
+    color: #FFF
+    background-color: mix($teal, white, 80%)
+    border-color: mix($teal, white, 65%)
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus
+    color: #FFF
+    background-color: mix($teal, white, 60%)
+    border-color: mix($teal, white, 45%)
+
+
+
+
+.button.button-black,
+button.button-black,
+input[type="submit"].button-black,
+input[type="reset"].button-black,
+input[type="button"].button-black
+    color: mix(white, black, 90%)
+    background-color: $rich-black-60
+    border-color: $rich-black-40
+
+.button.button-black:hover,
+button.button-black:hover,
+input[type="submit"].button-black:hover,
+input[type="reset"].button-black:hover,
+input[type="button"].button-black:hover,
+.button.button-black:focus,
+button.button-black:focus,
+input[type="submit"].button-black:focus,
+input[type="reset"].button-black:focus,
+input[type="button"].button-black:focus
+    color: white
+    background-color: $rich-black-40
+    border-color: $rich-black-20

@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: CnapInfini, "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+$heading-font-stack: CooperHewitt, "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default
+
+
+/// Copy text color
+$teal: #3AA08F
+$teal-80: tint($teal, 80%)
+$teal-60: tint($teal, 60%)
+$teal-40: tint($teal, 40%)
+$teal-20: tint($teal, 20%)
+
+$gold: #D4B427
+$gold-60: #ECC21A // taken from the logo, different than tinted down
+$gold-40: #F4D221
+$gold-20: tint($gold, 20%)
+
+$rich-black: #262637 // Fuligin
+$rich-black-80: tint($rich-black, 80%)
+$rich-black-60: tint($rich-black, 60%)
+$rich-black-40: tint($rich-black, 40%)
+$rich-black-20: tint($rich-black, 20%)
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ("small": 320px, "medium": 768px, "large": 1024px) !default
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "/images/" !default
