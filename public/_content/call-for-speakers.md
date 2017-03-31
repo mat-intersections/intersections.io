@@ -2,4 +2,4 @@ The Intersections committee is looking for speakers to deliver talks around the 
 
 The topics might include, but not limited to, media arts consumption and ethical consumerism, self-censorship, appropriation of digital artworks. Please register your interest [here](mailto:info@intersections.io).
 
-Check out this year’s [programme](#) for more details.
+<!-- Check out this year’s [programme](#) for more details. -->
