@@ -1,0 +1,20 @@
+//- Begin MailChimp Signup Form
+.row
+    form.validate(action='//intersections.us13.list-manage.com/subscribe/post?u=7a69c94e74089b9965aa0e69d&id=4c521d7a21', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+
+        .five.columns
+            h5 Sign up to our mailing list
+
+        .four.columns
+            input.required.email(type='email', value='', name='EMAIL', placeholder='Your email address')
+
+        .three.columns
+            input.button.button-black(type='submit', value='Subscribe', name='subscribe')
+
+            //- honeypot: real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_7a69c94e74089b9965aa0e69d_4c521d7a21', tabindex='-1', value='')
+
+.row
+    .twelve-columns
+        p.dim Enter your email address to receives updates about Inter/sections, and know when the full programme will be released, and registrations will open. We will not spam you, and we will not share your email with third parties.

@@ -1,18 +1,12 @@
 footer.section
-     .container: .row
-        .five.columns
-            | &copy; Intersections 2016-2017.<br >
-            | Intersections is supported and sponsored by:
+     .container
+        .row
+            .twelve.columns
+                p Intersections is dedicated to a harassment-free conference experience for everyone. <a href="/code-of-conduct.html">Our code of conduct can be found here</a>.<br> We are supported and sponsored by:
 
-        .three.columns
-            //- @todo: have logos
-            p
-                | MAT<br>
-                | QMUL <br>
-                | RCUK Digital Economy
-
-        .three.columns
-            p
-                | AHRC <br>
-                | EPSRC <br>
-                | C4DM <br>
+        .row
+            //- sponsors is defined in harp.json
+            each details, sponsor in sponsors
+                .logo.two.columns
+                    a(href=details[1])
+                        img(src='/images/sponsors/#{ sponsor }.png', alt=details[0], title=details[0])

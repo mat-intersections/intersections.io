@@ -2,19 +2,62 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.teal
-	background-color: $teal
-	background-image: url("../images/bg-pattern.gif")
-	background-position: bottom right
-	background-size: 600px auto
-	background-repeat: no-repeat
-	color: white
+.introduction
+    background-color: $teal
+    background-image: url("../images/bg-pattern.gif")
+    background-position: bottom right
+    background-size: 600px auto
+    background-repeat: no-repeat
+    color: #fff
 
-	+tablet
-		background-size: 400px auto
+    +tablet
+        background-size: 400px auto
 
-	+mobile
-		background-size: 300px auto
+    +mobile
+        background-size: 300px auto
 
-	h2
-		color: white
+    h2
+        color: #fff
+
+    a:link,
+    a:visited
+        color: mix(#fff, $teal, 65%)
+
+.call-for-artists
+    $call-background: #7e7b6c
+    background-color: $call-background
+
+    background-image: url("../images/bg-art.jpg")
+    background-position: left 0
+    background-size: auto 100%
+    background-repeat: no-repeat
+
+    color: #fff
+    text-shadow: 0 2px 3px $call-background
+
+    h2
+        color: $gold
+        text-shadow: 0 0 6px $call-background
+
+    a:link,
+    a:visited
+        color: mix(#fff, $gold, 50%)
+
+
+    +tablet
+        background-position: -40% 0
+
+    +mobile
+        background-position: 50% 0
+        text-shadow: 0 0 2px #262520
+
+        a:link, a:visited
+            color: mix(#fff, $gold, 70%)
+            text-shadow: 0 1px 3px black
+
+        h2
+            text-shadow: 0 0 9px #403e36
+
+.mailing-list-registration
+    background-color: $rich-black-80
+    color: #fff
