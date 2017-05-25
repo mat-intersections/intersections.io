@@ -24,3 +24,5 @@ If someone makes you or anyone else feel unsafe or unwelcome, please report it a
 When taking a personal report, our staff will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked to confront anyone and we won't tell anyone who you are.
 
 Our team will be happy to help you contact venue security, local law enforcement, local support services, or otherwise assist you to feel safe for the duration of the event. We value your attendance.
+
+*NB: This code of conduct is based on the [policy from the GF wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy). Appropriate changes have been made to fit our event and capacity to train staff.*
