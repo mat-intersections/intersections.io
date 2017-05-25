@@ -21,7 +21,7 @@ There's no strict guidelines for contributing as long as you comment and indent 
 There is a webhook that will pull any update to the **staging** or **production** branches as soon as you push them to GitHub, and it will auto-compile it into the dist folder (`harp compile dist/`). This means **master** should always be the branch further ahead, and **staging** should never be behind **production** unless you are deploying or doing a hotfix, and **production should never ever be ahead of any other branch**. So to deploy:
 
 * make sure it works locally (on the master branch)
-* `git merge master staging`
+* `git merge staging master`
 * `git checkout staging && git push origin staging`
 * Once it's done pushing, wait a few seconds for the server to compile, then test on https://staging.intersections.io
 * If everything works on staging: `git merge staging production && git checkout production && git push origin production`
