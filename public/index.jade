@@ -18,11 +18,14 @@
     .container
         .row
             .seven.columns
-                h2 More information coming soon…
-                != partial("_content/more-information")
-
+                != partial("_content/week-programme")
+                
             .five.columns
-                img.full-width(src="/images/speaking.jpg", alt="Panel at Intersections 2016")
+                != partial("_content/speakers")
+                
+        .row
+            .twelve-columns
+                != partial("_content/tickets")
 
 .section.mailing-list-registration
     .container
