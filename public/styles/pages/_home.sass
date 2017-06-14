@@ -10,9 +10,15 @@
         color: #fff
 
     .topic
+        font-size: 2.3rem
+
         strong
             margin-left: -.36em // pull quote
             text-transform: uppercase
+
+.abstract
+    p
+        margin-bottom: 1rem
 
 .call-for-artists
     $call-background: #7e7b6c
@@ -54,16 +60,27 @@
     color: #fff
 
 
+
 .events-list
+    h3 + date
+        display: block
+        margin: -1rem 0 1rem
+
+        font-family: $heading-font-stack
+        font-size: 2rem
+        color: $teal-main
+        font-weight: normal
+
     li
         margin: 0
         padding: 0 0 .7rem
         list-style-type: none
 
-    date
-        font-family: $heading-font-stack
-        color: $rich-black-60
-        text-transform: uppercase
+    ul
+        date
+            font-family: $heading-font-stack
+            color: $coal-01
+            text-transform: uppercase
 
-        &::after
-            content: ":"
+            &::after
+                content: ":"
