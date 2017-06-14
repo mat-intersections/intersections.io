@@ -2,22 +2,77 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+// adapt main to header height
+main
+	margin-top: 13rem
+
 header
-	border-top: 1rem solid $gold
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: 60
+	background-color: $white
+	box-shadow:  0 3px 17px rgba($coal-base, 0.4)
+
+	@media (min-width: 550px)
+		position: fixed
+
+	h1
+		@media (min-width: 550px)
+			margin: 0
+
 	a img
 		width: 100%
 
-.topic
-	// background: $gold-20
+	nav
+		ul
+			font-family: $heading-font-stack
+			text-transform: uppercase
+			margin: 0 0 0 -.6rem
+			
+			li
+				list-style-type: none
+				float: left
+				display: inline-block
+				margin-bottom: 0
+				
+				&::after
+					content: "·"
+					color: $teal-main
 
-.topic h2
-	color: $gold-60
+				&:last-of-type::after
+					content: ""
+
+				a,
+				a:visited
+					text-decoration: none
+					color: $coal-base
+					padding: .3rem .6rem
+					font-weight: bold
+
+					&.active
+						color: $teal-base
+						text-decoration: underline
+						
+						&:hover
+							background-color: $teal-02
+						
+					&:hover,
+					&:active,
+					&:focus
+						background: $teal-03
+
+.dates
+	color: $teal-base
 	font-family: $heading-font-stack
-	font-size: 2.3rem
-    margin-bottom: 0
+	margin-bottom: 1.1rem
+	font-size: 2rem
+	line-height: 2rem
+	text-transform: uppercase
+
+.topic
+	font-size: 2rem
+	margin-bottom: 0
 
 	+mobile
 		font-size: 1.8rem
-
-	span
-		color: $gold

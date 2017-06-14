@@ -3,25 +3,16 @@
 // -----------------------------------------------------------------------------
 
 .introduction
-    background-color: $teal
-    background-image: url("../images/bg-pattern.gif")
-    background-position: bottom right
-    background-size: 600px auto
-    background-repeat: no-repeat
+    background-color: $teal-base
     color: #fff
-
-    +tablet
-        background-size: 400px auto
-
-    +mobile
-        background-size: 300px auto
 
     h2
         color: #fff
 
-    a:link,
-    a:visited
-        color: mix(#fff, $teal, 65%)
+    .topic
+        strong
+            margin-left: -.36em // pull quote
+            text-transform: uppercase
 
 .call-for-artists
     $call-background: #7e7b6c
@@ -36,12 +27,12 @@
     text-shadow: 0 2px 3px $call-background
 
     h2
-        color: $gold
+        color: $gold-base
         text-shadow: 0 0 6px $call-background
 
     a:link,
     a:visited
-        color: mix(#fff, $gold, 50%)
+        color: mix(#fff, $gold-base, 50%)
 
 
     +tablet
@@ -52,12 +43,12 @@
         text-shadow: 0 0 2px #262520
 
         a:link, a:visited
-            color: mix(#fff, $gold, 70%)
+            color: mix(#fff, $gold-base, 70%)
             text-shadow: 0 1px 3px black
 
         h2
             text-shadow: 0 0 9px #403e36
 
 .mailing-list-registration
-    background-color: $rich-black-80
+    background-color: $coal-main
     color: #fff

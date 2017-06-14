@@ -1,10 +1,20 @@
 header.section
     .container
-        .row.eight.columns
-                h1: a#logo(href='/')
-                    img(src="images/logo.png", alt="Intersections 2017")
-
-        .row.twelve.columns.topic
-            h2 Exhibition, talks, workshops and performances<br>
-                | at the intersection of media &amp; arts technology. <br>
-                span #{ dates }, Mile End Art Pavilion, London
+        .row
+            .four.columns
+                h1: a#logo(href='/', title="Return to Inter/sections homepage")
+                    img(src="images/intersections-2017-landscape.svg", alt="Intersections 2017")
+                        
+            .eight.columns
+                p.dates
+                    | #{ dates } <br>
+                    | Mile End Art Pavilion, London
+                    
+                nav
+                    ul
+                        li: a(href='/', class="#{ current.source == 'index' && 'active' }") Home
+                        li: a(href='/exhibition', class="#{ current.source == 'exhibition' && 'active' }") Exhibition
+                        li: a(href='/symposium', class="#{ current.source == 'symposium' && 'active' }") Symposium
+                        li: a(href='/workshops', class="#{ current.source == 'workshops' && 'active' }") Workshops
+                        li: a(href='/schedule', class="#{ current.source == 'schedule' && 'active' }") Schedule
+                        li: a(href='/practical-information', class="#{ current.source == 'practical-information' && 'active' }") Practical info
