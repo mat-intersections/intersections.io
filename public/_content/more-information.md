@@ -1,0 +1,1 @@
+We will soon be updating our website with the list of speakers, workshops and events happening during the week, along links to register for a free ticket to the symposium. If you have any questions or would like to get involved please get in touch with us at [info@intersections.io](mailto:info@intersections.io).

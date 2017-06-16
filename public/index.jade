@@ -18,18 +18,14 @@
     .container
         .row
             .seven.columns
-                h2 Call for speakers
-                != partial("_content/call-for-speakers")
-
+                != partial("_content/week-programme")
+                
             .five.columns
-                img.full-width(src="/images/speaking.jpg", alt="Panel at Intersections 2016")
-
-.section.call-for-artists
-    .container
+                != partial("_content/speakers")
+                
         .row
-            .offset-by-four.eight.columns
-                h2 Call for artists
-                != partial("_content/artists-commission")
+            .twelve-columns
+                != partial("_content/tickets")
 
 .section.mailing-list-registration
     .container
