@@ -1,13 +1,17 @@
-## Symposium Speakers
-
 ### Kate Bevan
 
 <img class="side-picture u-pull-left rounded" src="/images/speakers/katebevan.jpg" alt="A picture of Kate Bevan">
-Kate is a writer, broadcaster and consultant who lives in London and who loves technology. She worked with a wide range of people from the Financial Times, Sky News, the BBC and Al Jazeera English to smart tech start-ups including VoxSmart and Bluefire, a nifty and nimble telecoms consultancy. She is interested in how our lives intersect with tech, and that ranges from data security and protection to social media, consumer tech and IoT, among other things.
+**Freelance writer, editor and broadcaster**. Kate specialises in technology and social media. In her articles she draws attention to social presence caused by social media, and the relationship between consumer and enterprise technology.
 
-### Stephen Minger
+### Dr Stephen Minger
 
 <img class="side-picture u-pull-left rounded" src="/images/speakers/stephenminger.jpg" alt="A picture of Stephen Minger">
-Stephen was the Stem Cell Expert and a Member of the UK Gene Therapy Advisory Committee (GTAC) at the Department of Health, the Focal Point for Regenerative Medicine, Drug Discovery and Modernisation of Traditional Chinese Medicine in China for the UK Department of Business, Innovation and Skills from 2006-2009. He has numerous external consultancies including the European Commission Framework Programmes (FP6, FP7 and Horizon 2020) and is a member of the Board of Directors of the Canadian Centre for the Commercialisation of Regenerative Medicine (CCRM).
+**Expert in stem cell technology**. Stephen is actively involved with the UK Department of Health and with the Minister for Public Health in the consultation with both Houses of Parliament that led to the passage of the Human Embryo Bill of 2009 and the inclusion of new forms of animal-human embryos within primary legislation.  
+
+### Dr Dan McQuillan
+
+<img class="side-picture u-pull-left rounded" src="/images/speakers/danmcquillan.jpg" alt="A picture of Dan McQuillan">
+**Lecturer in Creative & Social Computing at Goldsmiths College**. Before becoming an academic, Dan was Director of E-communications for Amnesty International, Head of Digital for Make Your Mark, and Head of Digital for Media for Development. Dan is the co-founder of [Social Innovation Camp](http://www.sicamp.org/) and the science & technical lead for the citizen science project [Science for Change Kosovo](http://www.internetartizans.co.uk/kosovo_science_for_change).
+
 
 ### More to be announced!
