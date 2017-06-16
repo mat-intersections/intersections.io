@@ -11,5 +11,5 @@
 
 Tickets are free but booking is essential.
 
-<a class="button cta" href="/symposium">More information</a>
+<a class="button cta" href="/workshops.html">More information</a>
 <a class="button cta tickets" href="/">Register for tickets</a>
