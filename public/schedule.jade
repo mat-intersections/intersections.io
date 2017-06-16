@@ -1,1 +1,36 @@
 
+.container
+    .row.twelve.columns
+        h2.bump-down Week programme
+        
+    .row.twelve.columns
+        .schedule-container
+            != partial("_content/week-programme")
+
+    .row.twelve.columns
+        h2 Symposium schedule
+        
+    .row.schedule-entry
+        .one.column 09.00
+        .eleven.columns
+            p Registration
+
+    .row.schedule-entry
+        .one.column 10.00
+        .eleven.columns 
+            p
+                | Opening <br>
+                em Nick Bryan-Kinns
+
+    .row.schedule-entry
+        .one.column 10.20
+        .eleven.columns            
+            p
+                | First talk: title <br>
+                em Name of speaker
+
+    .row.schedule-entry
+        .one.column 11.00
+        .eleven.columns            
+            p
+                | Etc
