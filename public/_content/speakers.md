@@ -1,5 +1,3 @@
-## Symposium Speakers
-
 ### Kate Bevan
 
 <img class="side-picture u-pull-left rounded" src="/images/speakers/katebevan.jpg" alt="A picture of Kate Bevan">

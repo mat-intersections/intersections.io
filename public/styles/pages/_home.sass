@@ -3,76 +3,43 @@
 // -----------------------------------------------------------------------------
 
 .introduction
-    background-color: $teal
-    background-image: url("../images/bg-pattern.gif")
-    background-position: bottom right
-    background-size: 600px auto
-    background-repeat: no-repeat
+    background-color: $teal-base
     color: #fff
-
-    +tablet
-        background-size: 400px auto
-
-    +mobile
-        background-size: 300px auto
 
     h2
         color: #fff
 
-    a:link,
-    a:visited
-        color: mix(#fff, $teal, 65%)
+    .topic
+        font-size: 2.3rem
 
-.call-for-artists
-    $call-background: #7e7b6c
-    background-color: $call-background
+        strong
+            margin-left: -.36em // pull quote
+            text-transform: uppercase
 
-    background-image: url("../images/bg-art.jpg")
-    background-position: left 0
-    background-size: auto 100%
-    background-repeat: no-repeat
-
-    color: #fff
-    text-shadow: 0 2px 3px $call-background
-
-    h2
-        color: $gold
-        text-shadow: 0 0 6px $call-background
-
-    a:link,
-    a:visited
-        color: mix(#fff, $gold, 50%)
-
-
-    +tablet
-        background-position: -40% 0
-
-    +mobile
-        background-position: 50% 0
-        text-shadow: 0 0 2px #262520
-
-        a:link, a:visited
-            color: mix(#fff, $gold, 70%)
-            text-shadow: 0 1px 3px black
-
-        h2
-            text-shadow: 0 0 9px #403e36
-
-.mailing-list-registration
-    background-color: $rich-black-80
-    color: #fff
-
+.abstract
+    p
+        margin-bottom: 1rem
 
 .events-list
+    h3 + date
+        display: block
+        margin: -1rem 0 1rem
+
+        font-family: $heading-font-stack
+        font-size: 2rem
+        color: $teal-main
+        font-weight: normal
+
     li
         margin: 0
         padding: 0 0 .7rem
         list-style-type: none
 
-    date
-        font-family: $heading-font-stack
-        color: $rich-black-60
-        text-transform: uppercase
+    ul
+        date
+            font-family: $heading-font-stack
+            color: $coal-01
+            text-transform: uppercase
 
-        &::after
-            content: ":"
+            &::after
+                content: ":"
