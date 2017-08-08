@@ -1,4 +1,6 @@
-# intersections.io 2017 website
+# OBSOLETE intersections.io 2017 website
+
+**This repo contains the code for an older version of the site. The code for the updated 2017 intersections site can be found [here](https://github.com/mat-intersections/intersections_redux/)**
 
 # How this works
 
